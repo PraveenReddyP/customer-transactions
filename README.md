@@ -53,8 +53,8 @@
 
 }
 
-### 3. Get Reward
-#### Description: Get last 3 month and Total reward points of a customer
+### 3. Get Rewards
+#### Description: Get last 3 months and Total reward points of a customer
 #### End point: {GET} http://localhost:8080/transactions/getrewards/{customerID}
 #### Sample Response:
 {
