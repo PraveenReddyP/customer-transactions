@@ -1,9 +1,9 @@
 # Getting Started
 
 ## Application setup
-To Run this spring boot application, we need postgres database in the network.
-1. Create a database with name "customertransactions"
-2. Configure the jdbc connection in  application.properties file. Please edit below 3 properties.
+1. To run this spring boot application, need java 17 or above and postgres database in the network.
+2. Create a database with name "customertransactions"
+3. Configure the jdbc connection in  application.properties file. Please edit below 3 properties.
 
    spring.datasource.url=jdbc:postgresql://localhost:5432/customertransactions
 
@@ -11,7 +11,7 @@ To Run this spring boot application, we need postgres database in the network.
 
    spring.datasource.password=postgres
 
-3. Create table called transaction with below query
+4. Create table called "transaction" with below query
 
    CREATE TABLE transaction (
    transactionid VARCHAR (50) PRIMARY KEY,
@@ -20,7 +20,7 @@ To Run this spring boot application, we need postgres database in the network.
    transactiondate TIMESTAMP
    );
 
-## Rest Endpoint implemented
+## Rest Endpoints implemented
 ### 1. Add Transaction
 #### Description: Create a new transaction
 #### End point: {POST} http://localhost:8080/transactions/addTransaction
